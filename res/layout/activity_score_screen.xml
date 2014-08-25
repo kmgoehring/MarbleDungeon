@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/graymarble" 
+    tools:context="edu.virginia.cs2110.marbledungeon.FullscreenActivity" >
+
+        <TextView
+        android:id="@+id/fullscreen_content"	
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="SCOREBOARD"
+        android:textColor="#5F0000"
+        android:typeface="serif"
+        android:textSize="100sp" />
+  
+	  <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+        	
+	        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+            
+	            	<include 
+    		    android:id="@+id/button2"
+   				layout="@layout/scoreboard"
+   				android:layout_width="fill_parent"
+   				android:layout_height="wrap_content"
+   				android:background="@drawable/graymarble" >
+				</include>
+	        
+            
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="pref_hardcore"
+        android:title="I'm hardcore."
+        android:summary="Changes difficulty to separate the casual scrubs from the marble masters."
+        android:defaultValue="false" />
+  
+</PreferenceScreen>

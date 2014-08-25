@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitemarble" 
+    tools:context="edu.virginia.cs2110.marbledungeon.LevelScreen"
+    tools:ignore="MergeRootFrame" >
+
+   <TextView
+        android:id="@+id/fullscreen_content"	
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/levels"
+        android:textColor="#000000"
+        android:typeface="serif"
+        android:textSize="140sp" />
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+	        
+            <include 
+    		    android:id="@+id/button2"
+   				layout="@layout/level_buttons"
+   				android:layout_width="fill_parent"
+   				android:layout_height="wrap_content"
+   				android:background="@drawable/whitemarble" >
+				</include>
+            
+        </LinearLayout>
+    </FrameLayout>
+    
+    </FrameLayout> 

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+      <ImageButton
+          android:id="@+id/gold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/silver"
+          android:background="@null"
+          android:paddingLeft="50dp"
+          android:paddingBottom="30dp"
+          android:src="@drawable/gold" />
+         
+      <ImageButton
+          android:id="@+id/silver"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/bronze"
+          android:background="@null"
+          android:paddingBottom="30dp"
+          android:paddingLeft="50dp"
+          android:src="@drawable/silver" />
+      
+       <ImageButton
+          android:id="@+id/bronze"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/return_button"
+          android:background="@null"
+          android:paddingLeft="50dp"
+          android:src="@drawable/bronze" />
+       
+       <TextView
+	      android:id="@+id/scoreName1"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:textSize="80sp"
+	      android:layout_alignTop="@+id/gold"
+	      android:layout_toRightOf="@+id/gold"
+	      android:paddingRight="150dp"
+	      android:paddingLeft="50dp"
+	      android:typeface="serif"
+	      android:textStyle="bold|italic"
+	      android:textColor="#5F0000"/>
+    
+      <TextView
+	      android:id="@+id/scoreNumber1"
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:textSize="80sp"
+	      android:layout_alignTop="@+id/scoreName1"
+	      android:layout_toRightOf="@+id/scoreName1"
+	      android:paddingRight="100dp"
+	      android:gravity="right"
+	      android:typeface="serif"
+	      android:textStyle="bold|italic"
+	      android:textColor="#5F0000" />
+      
+       <TextView
+	      android:id="@+id/scoreName2"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:textSize="80sp"
+	      android:layout_alignTop="@+id/silver"
+	      android:layout_toRightOf="@+id/silver"
+	      android:paddingRight="150dp"
+	      android:paddingLeft="50dp"
+	      android:typeface="serif"
+	      android:textStyle="bold|italic"
+	      android:textColor="#5F0000"/>
+    
+      <TextView
+	      android:id="@+id/scoreNumber2"
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:textSize="80sp"
+	      android:layout_alignTop="@+id/scoreName2"
+	      android:layout_toRightOf="@+id/scoreName2"
+	      android:paddingRight="100dp"
+	      android:gravity="right"
+	      android:typeface="serif"
+	      android:textStyle="bold|italic"
+	      android:textColor="#5F0000" />
+      
+        <TextView
+	      android:id="@+id/scoreName3"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:textSize="80sp"
+	      android:layout_alignTop="@+id/bronze"
+	      android:layout_toRightOf="@+id/bronze"
+	      android:gravity="center"
+	      android:paddingRight="150dp"
+	      android:paddingLeft="50dp"
+	      android:typeface="serif"
+	      android:textStyle="bold|italic"
+	      android:textColor="#5F0000"/>
+
+    
+      <TextView
+	      android:id="@+id/scoreNumber3"
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:textSize="80sp"
+	      android:layout_alignTop="@+id/scoreName3"
+	      android:layout_toRightOf="@+id/scoreName3"
+	      android:layout_below="@+id/scoreNumber3"
+	      android:paddingRight="100dp"
+	      android:gravity="right"
+	      android:typeface="serif"
+	      android:textStyle="bold|italic"
+	      android:textColor="#5F0000" />
+     
+    
+      
+         <ImageButton
+      android:id="@+id/return_button"
+      android:src="@drawable/marble5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:background="@null"
+      android:paddingLeft="50dp"
+      android:paddingTop="30dp"
+      android:paddingRight="20dp"/>
+       
+           <TextView
+      android:id="@+id/return_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="20sp"
+      android:layout_alignBottom="@+id/return_button"
+      android:layout_toRightOf="@+id/return_button"
+      android:paddingTop="20dp"
+      android:paddingBottom="20dp"
+      android:typeface="serif"
+      android:textStyle="bold|italic"
+      android:textColor="#000000"
+      android:text="Main Menu">
+   		</TextView>  
+      
+       
+  
+    
+</RelativeLayout> 

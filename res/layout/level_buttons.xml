@@ -1,0 +1,62 @@
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+      <!--  
+      This layout will be used to implement various custom buttons in a linear layout. 
+      It allows for buttons to be positioned relative to each other if necessary for a nice design. 
+      Also establishes text views for each button. 
+      -->
+      
+      <ImageButton
+      android:id="@+id/level1_button"
+      android:src="@drawable/marble4"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:background="@null"
+      android:paddingLeft="50dp"
+      android:paddingRight="20dp" />
+      
+      
+      
+       <ImageButton
+      android:id="@+id/return_button"
+      android:src="@drawable/marble5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/level1_button"
+      android:background="@null"
+      android:paddingLeft="50dp"
+      android:paddingRight="20dp"
+      android:paddingTop="20dp"/>
+   		
+      <TextView
+      android:id="@+id/level1_button_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="30sp"
+      android:layout_alignTop="@+id/level1_button"
+      android:layout_toRightOf="@+id/level1_button"
+      android:typeface="serif"
+      android:textStyle="bold|italic"
+      android:textColor="#5F0000"
+      android:text="Level 1">
+   		</TextView>
+   		
+       <TextView
+      android:id="@+id/return_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="30sp"
+      android:layout_alignTop="@+id/return_button"
+      android:layout_toRightOf="@+id/return_button"
+      android:paddingTop="20dp"
+      android:typeface="serif"
+      android:textStyle="bold|italic"
+      android:textColor="#5F0000"
+      android:text="Main Menu">
+   		</TextView>
+   	
+    
+</RelativeLayout>  

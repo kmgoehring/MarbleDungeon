@@ -1,0 +1,49 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/redmarble" 
+    tools:context="edu.virginia.cs2110.marbledungeon.FullscreenActivity" >
+
+	<TextView
+        android:id="@+id/fullscreen_content"	
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="#3B9C9C"
+        android:typeface="serif"
+        android:textSize="140sp"
+        android:textStyle="bold|italic" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+
+            <include
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="0.50"
+                layout="@layout/menu_buttons"
+                android:background="@drawable/redmarble" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

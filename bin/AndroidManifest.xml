@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.virginia.cs2110.marbledungeon"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <!--
+    Custom launcher icon taken from "Red Marble Theme" by "IronLyon" at 
+    https://play.google.com/store/apps/details?id=com.gau.go.launcherex.theme.redmarble
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/marblelaunch"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.virginia.cs2110.marbledungeon.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="edu.virginia.cs2110.marbledungeon.LevelScreen"
+            android:label="@string/title_activity_level_screen"
+            android:parentActivityName="edu.virginia.cs2110.marbledungeon.FullscreenActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.virginia.cs2110.marbledungeon.FullscreenActivity" />
+        </activity>
+        <activity
+            android:name="edu.virginia.cs2110.marbledungeon.ScoreScreen"
+            android:label="@string/title_activity_score_screen"
+            android:parentActivityName="edu.virginia.cs2110.marbledungeon.FullscreenActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.virginia.cs2110.marbledungeon.FullscreenActivity" />
+        </activity>
+        <activity
+            android:name="edu.virginia.cs2110.marbledungeon.SplashScreen"
+            android:label="@string/title_activity_splash_screen"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.virginia.cs2110.marbledungeon.LevelOne"
+            android:label="@string/title_activity_level_one"
+            android:parentActivityName="edu.virginia.cs2110.marbledungeon.FullscreenActivity"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.virginia.cs2110.marbledungeon.LevelScreen" />
+        </activity>
+        <activity
+            android:name="edu.virginia.cs2110.marbledungeon.EndGame"
+            android:label="@string/title_activity_end_game" >
+        </activity>
+        <activity
+            android:name="edu.virginia.cs2110.marbledungeon.SettingsScreen"
+            android:label="@string/title_activity_settings_screen" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MarbleDungeon</string>
+    <string name="menu_button">Main Menu</string>
+    <string name="dummy_content">MARBLE\nDUNGEON</string>
+    <string name="title_activity_level_screen">LevelScreen</string>
+    <string name="levels">LEVELS</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_score_screen">ScoreScreen</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_score_board_adapter">ScoreBoardAdapter</string>
+    <string name="title_activity_splash_screen">Marble\nDungeon</string>
+    <string name="Alishan_Hassan">Alishan Hassan</string>
+    <string name="Elizabeth_Zerihun">Elizabeth Zerihun</string>
+    <string name="Kevin_Goehring">Kevin Goehring</string>
+    <string name="Nik_Padmanabhan">Nik Padmanabhan</string>
+    <string name="Virginia">University of Virginia</string>
+    <string name="Course_Class">CS 2110 Summer 2014</string>
+    <string name="title_activity_level_one">LevelOne</string>
+    <string name="title_activity_end_game">EndGame</string>
+    <string name="Your_Score">Your Score:</string>
+    <string name="Score">score:</string>
+    <string name="High_Score">High Score!</string>
+    <string name="Enter_Name">Enter Name</string>
+    <string name="button_send">Send</string>
+    <string name="title_activity_settings_screen">SettingsScreen</string>
+
+</resources>
